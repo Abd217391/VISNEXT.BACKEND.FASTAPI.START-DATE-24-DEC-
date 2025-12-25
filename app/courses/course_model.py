@@ -9,8 +9,5 @@ class Course(Base):
 
     name = Column(String(100), nullable=False)
 
-    department_id = Column(
-        Integer,
-        ForeignKey("departments.id"),
-        nullable=False
+    department_id = Column(Integer,ForeignKey("departments.id"),nullable=False
     )
